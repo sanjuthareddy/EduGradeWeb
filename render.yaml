@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: EduGradeWeb
+    env: java
+    buildCommand: mvn package -q
+    startCommand: java -jar target/EduGradePro.jar
+    envVars:
+      - key: DATA_DIR
+        value: /tmp
