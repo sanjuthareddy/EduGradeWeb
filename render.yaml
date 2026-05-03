@@ -1,9 +1,0 @@
-﻿services:
-  - type: web
-    name: EduGradeWeb
-    env: node
-    buildCommand: bash build.sh
-    startCommand: java -jar target/EduGradePro.jar
-    envVars:
-      - key: DATA_DIR
-        value: /tmp
